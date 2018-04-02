@@ -1,0 +1,11 @@
+<script>
+    const si = require('systeminformation');
+var everySecond;
+everySecond = setInterval(whichFunction,100);
+whichFunction {
+  si.cpuTemperature(data.main);
+  console.log(data.main);
+  document.getElementById("temp").innerHTML = data.main;
+}
+
+</script>
